@@ -18,7 +18,7 @@ const cases: Case[] = [
   { id: 1, src: "/mac.png", alt: "Case 1", category: "Website", title: "Brazilian Footwear", description: "For over 50 years, we have been encouraging and promoting Brazilian sports. With quality, durability, comfort and cost-effectiveness, our brand caters to all" },
   { id: 4, src: "/alma.png", alt: "Case 4", category: "Branding", title: "Alma Studio", description: "Branding project for Alma." },
   { id: 3, src: "/tgr.png", alt: "Case 3", category: "Motion", title: "TGR Motion", description: "Motion design project." },
-  { id: 5, src: "/Bag.png", alt: "Case 5", category: "Branding", title: "Sementes do Fundão", description: "Visual Identity for a personal project" },
+  { id: 5, src: "/bag.png", alt: "Case 5", category: "Branding", title: "Sementes do Fundão", description: "Visual Identity for a personal project" },
   { id: 2, src: "/luci.png", alt: "Case 2", category: "Branding", title: "Portfolio Website", description: "Portfolio Website for Luciano." },
   { id: 6, src: "/iPhone.png", alt: "Case 6", category: "Website", title: "Planeta Atlântida", description: "Planeta Atlântida Website" },
 ];
