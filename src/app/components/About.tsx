@@ -1,3 +1,8 @@
+"use client";
+
+import Image from "next/image";
+import Footer from "@/app/components/Footer";
+
 export default function About() {
   return (
     <section className="w-full bg-black text-white">
@@ -7,16 +12,25 @@ export default function About() {
           <span className="text-[#F2360C] font-medium">Yo,</span>{" "}
           I’m Guilherme Reinehr – a multidisciplinary designer based in Brazil,
           working worldwide with a focus in{" "}
-          <span className="font-semibold">UX/UI, prototype & motion.</span>
-          <br />
-          i’m currently creating beauty at{" "}
-          <span className="font-semibold">tgr.</span>
+          <span className="font-semibold">
+            UX/UI, prototype & motion. i’m currently creating beauty at tgr.
+          </span>
         </h1>
       </div>
 
       {/* Card com disciplinas e áreas */}
-      <div className="relative w-full bg-gradient-to-b from-[#F82D00] to-[#000000] flex justify-center items-center py-20">
-        <div className="relative max-w-3xl w-full bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 px-8 py-10 shadow-xl">
+      <div className="relative w-full flex justify-center items-center py-40">
+        {/* Background image */}
+        <div className="absolute inset-0 -z-100">
+          <Image
+            src="/frame.png" // troque pelo caminho da sua imagem
+            alt="Background"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div className="relative max-w-3xl w-full bg-black/7 backdrop-blur-xl rounded-2xl border border-white/10 px-8 py-10 shadow-xl">
           <div className="grid grid-cols-2 gap-8 text-sm md:text-base">
             {/* Coluna 1 */}
             <div>
@@ -59,6 +73,8 @@ export default function About() {
           <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/20 rounded-full blur-2xl"></div>
         </div>
       </div>
+
+
     </section>
   );
 }
