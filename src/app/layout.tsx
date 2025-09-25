@@ -1,9 +1,15 @@
 
-import type { Metadata } from "next"
 import "./globals.css"
 import { cn } from "./components/ui/lib/utils"
 import type React from "react" // Added import for React
 import { Archivo } from "next/font/google";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reinehr",
+  description: "Portfolio Website",
+};
 
 const archivo = Archivo({
   subsets: ["latin"],
